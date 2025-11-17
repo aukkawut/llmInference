@@ -19,3 +19,5 @@ or
 gcc openrouter_md.c -o openrouter -lcurl -lcjson  
 ```
 if you need latex and markdown support on terminal. Note that you might got a warning (and possibly error) to add `stdbool.h`, if you do just add it.
+
+To install that, move it to PATH directory, maybe something like `/usr/bin/` or `~/.local/bin/`. This should works on UNIX system. If you use Windows, then I don't know man, just use Linux. 
