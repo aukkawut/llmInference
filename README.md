@@ -6,5 +6,16 @@ This code is written with the help of AI. There are parts that can be optimized 
 ## Requirements
 * `libcurl`
 * `cJSON`
-* some complier
+* some complier like `gcc`
+* (optional) `TeXicode` (https://github.com/dxddxx/TeXicode) and `glow` (https://github.com/charmbracelet/glow) for markdown and latex support
 
+## Compiling
+
+```
+gcc openrouter.c -o openrouter -lcurl -lcjson
+```
+or
+```
+gcc openrouter_md.c -o openrouter -lcurl -lcjson  
+```
+if you need latex and markdown support on terminal. Note that you might got a warning (and possibly error) to add `stdbool.h`, if you do just add it.
